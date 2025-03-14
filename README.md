@@ -28,8 +28,13 @@ Class: Elevens
 -lose: bool
 
 +InitializaeGame()
+
 +CheckForElevens: bool
+
 +CheckValidMove: bool
+
 +RemoveMatchedCard ()
+
 +ValidateHandCount
+
 +IsGameOver() bool
