@@ -1,47 +1,39 @@
-Will create through unity for GUI extra credit
+Overview UML
 
-Class: Card
-
--Suit: String
-
--Rank: int
-
-+Cards(suit, Rank)
-
-+IsFaceCard (): bool
-
-+ToString (): String
-
-Class Deck
-
--Cards: Card []
-
--Delete: Card []
-
-+Shuffle()
-
-+DrawCard(): Card
-
-+IsEmpty(): bool
-
-+ReplaceCards (useCards: Card[])
-
-
-
-Class: Elevens
+ElevensGame
 
 -deck: Deck
--hand: Card[]
--lose: bool
+-table: List<Card>
+-const Table_Size: int
 
-+InitializaeGame()
++ElevensGame()
++Play()
+-PrintTable()
+-HasValidMove() :: Bool
+-IsValidPair(i : int, j: int) :: bool
+-HasValidFaceSEt() :: bool
+-RemoveCards(indices: int[])
+-RefillTable()
 
-+CheckForElevens: bool
+Deck
 
-+CheckValidMove: bool
+-cards: List<Card>
 
-+RemoveMatchedCard ()
++Deck()
++Count() :: int
++IsEmpty() :: bool
++TakeTopCard() :: Card
++Shuffle()
 
-+ValidateHandCount
+Card
 
-+IsGameOver() bool
+-suit: Suit
+-Rank: Rank
+
++Card(rank: Rank, suit: suit)
++GetValue() :: int
++ToString() :: string
+
+Enums Rank
+
+Enum Suit
