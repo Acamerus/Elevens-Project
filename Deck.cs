@@ -1,3 +1,13 @@
+// Deck
+
+// -cards: List<Card>
+
+// +Deck()
+// +Count() :: int
+// +IsEmpty() :: bool
+// +TakeTopCard() :: Card
+// +Shuffle()
+
 namespace Elevens;
 
 public class Deck

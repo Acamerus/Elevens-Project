@@ -1,3 +1,12 @@
+// Card
+
+// -suit: Suit
+// -Rank: Rank
+
+// +Card(rank: Rank, suit: suit)
+// +GetValue() :: int
+// +ToString() :: string
+
 namespace Elevens;
 
 public class Card

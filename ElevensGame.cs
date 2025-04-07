@@ -1,3 +1,19 @@
+// ElevensGame
+
+// -deck: Deck
+// -table: List<Card>
+// -const Table_Size: int
+
+// +ElevensGame()
+// +Play()
+// -PrintTable()
+// -HasValidMove() :: Bool
+// -IsValidPair(i : int, j: int) :: bool
+// -HasValidFaceSEt() :: bool
+// -RemoveCards(indices: int[])
+// -RefillTable()
+
+
 namespace Elevens;
 
 public class ElevensGame
