@@ -32,6 +32,14 @@ public class Deck
     
     public void Shuffle()
     {
-        
+        Random random = new Random();
+        for (int i = cards.Count - 1; i > 0; i--)
+        {
+            int randomIndex = random.Next(0, i + 1);
+            
+            Card temp = cards[i];
+            cards[i] = cards[randomIndex];
+            cards[randomIndex] = temp;
+        }
     }
 }
